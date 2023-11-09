@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectPDM.PaginaRegister"
+             Title="PaginaRegister">
+
+    <StackLayout>
+        <Entry x:Name="EmailEntry" Placeholder="Email" />
+        <Entry x:Name="NameEntry" Placeholder="Name" />
+        <Entry x:Name="TelefonEntry" Placeholder="Telefon" />
+        <Entry x:Name="ParolaEntry" Placeholder="Parola" IsPassword="True" />
+        <Button Text="Register" Clicked="RegisterButton_Clicked" />
+        <Button Text="Go to Login" Clicked="LoginButton_Clicked" />
+    </StackLayout>
+    
+</ContentPage>

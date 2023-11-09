@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProiectPDM.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProiectPDM"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:PaginaLogin}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate local:PaginaRegister}"
+        Route="RegisterPage" />
+
+    <ShellContent
+        Title="Echipamente"
+        ContentTemplate="{DataTemplate local:PaginaEchipamente}"
+        Route="PaginaEchipamente" />
+
+    <ShellContent
+    Title="Profil"
+    ContentTemplate="{DataTemplate local:PaginaProfil}"
+    Route="PaginaProfil" />
+
+    <ShellContent
+Title="Inchirieri"
+ContentTemplate="{DataTemplate local:PaginaInchirieri}"
+Route="PaginaInchirieri" />
+
+</Shell>

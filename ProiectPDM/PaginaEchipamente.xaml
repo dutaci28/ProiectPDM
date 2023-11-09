@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectPDM.PaginaEchipamente"
+             Title="PaginaEchipamente">
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Echipamente" >
+            <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
+            <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Cont">
+            <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
+            <MenuFlyoutItem Text="Logout" Clicked="Logout_Clicked"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <CollectionView x:Name="colViewEchipamente">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Text="{Binding Denumire}"/>
+                            <Label Grid.Column="1" Text="{Binding Marime}"/>
+                            <Label Grid.Column="2" Text="{Binding Categorie}"/>
+                            <Label Grid.Column="3" Text="{Binding Pret}"/>
+                            <Button Grid.Column="4" Text="Inchiriaza" Clicked="Inchiriaza_Clicked"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
