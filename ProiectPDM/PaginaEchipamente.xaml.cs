@@ -38,7 +38,12 @@ public partial class PaginaEchipamente : ContentPage
     {
         Shell.Current.GoToAsync("//PaginaInchirieri");
     }
+    
 
+  private void Informatii_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaHarta");
+    }
     private void Profil_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaProfil");

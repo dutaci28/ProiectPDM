@@ -9,10 +9,14 @@
             <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
             <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
         </MenuBarItem>
+        <MenuBarItem Text="Informatii">
+            <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
+        </MenuBarItem>
         <MenuBarItem Text="Cont">
             <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
             <MenuFlyoutItem Text="Logout" Clicked="Logout_Clicked"/>
         </MenuBarItem>
+    
     </ContentPage.MenuBarItems>
 
     <ScrollView>

@@ -22,6 +22,11 @@
         Route="PaginaEchipamente" />
 
     <ShellContent
+       Title="Informatii"
+       ContentTemplate="{DataTemplate local:PaginaHarta}"
+       Route="PaginaHarta" />
+
+    <ShellContent
     Title="Profil"
     ContentTemplate="{DataTemplate local:PaginaProfil}"
     Route="PaginaProfil" />

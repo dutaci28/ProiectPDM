@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectPDM.PaginaHarta"
+             Title="PaginaHarta">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Echipamente" >
+            <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
+            <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Informatii">
+            <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
+        </MenuBarItem>
+        <MenuBarItem Text="Cont">
+            <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
+            <MenuFlyoutItem Text="Logout" Clicked="Logout_Clicked"/>
+        </MenuBarItem>
+
+    </ContentPage.MenuBarItems>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Image BackgroundColor="#D1D1D1"
+        Source="https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg" Aspect="AspectFill" HeightRequest="375" WidthRequest="725" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Nume" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center"/>
+                <Label Text="Dificultate" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center" />
+                <Label Text="Lungime" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray"  HorizontalTextAlignment="Center"/>
+                <Label Text="Diferenta de nivel" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Carp" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"/>
+                <Label Text="2500 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="585 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Zade" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"/>
+                <Label Text="800 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="400 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Carp firul vaii" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" />
+                <Label Text="1200 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="300 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Carp 'Fata ascunsa'" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" />
+                <Label Text="150 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="60 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Carp 'Fata mare'" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" />
+                <Label Text="300 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="200 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Tarle" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Black" TextColor="White"/>
+                <Label Text="250 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="160 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Papagal" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"/>
+                <Label Text="300 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="180 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Mioritei" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" />
+                <Label Text="500 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="250 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Spitz" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert 2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" />
+                <Label Text="400 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="250 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Furnica" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert 2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"/>
+                <Label Text="600 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="350 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Vanturis" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Expert 2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Black" TextColor="White" />
+                <Label Text="250 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="180 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Drmul de vara" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Avansat" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Red" TextColor="White"/>
+                <Label Text="2350 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="560 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Scandurar" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Avansat" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Red" TextColor="White"/>
+                <Label Text="400 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="180 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Dorului Dreapta" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Avansat" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Red" TextColor="White"/>
+                <Label Text="600 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="210 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Dorului Stanga" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Avansat" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Red" TextColor="White"/>
+                <Label Text="600 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="210 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Soarelui" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  BackgroundColor="Blue" TextColor="White"/>
+                <Label Text="1180 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="210 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Dorului - Pe firul vaii" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White" />
+                <Label Text="1080 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="210 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Turistica" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White"/>
+                <Label Text="2800 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="460 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Valea Soarelui - Pe firul vaii" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White" />
+                <Label Text="900 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="210 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Laptici" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White"/>
+                <Label Text="650 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="180 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Drumul vechi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White" />
+                <Label Text="3500 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="450 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Popicarie" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White" />
+                <Label Text="300 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="50 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+                <Label Text="Poiana Stanii" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Incepator" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="Blue" TextColor="White" />
+                <Label Text="200 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="25 m" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

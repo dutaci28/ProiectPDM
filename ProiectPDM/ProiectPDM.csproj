@@ -64,6 +64,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="PaginaHarta.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PaginaInchirieri.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
