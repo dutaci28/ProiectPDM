@@ -4,6 +4,9 @@
              x:Class="ProiectPDM.PaginaHarta"
              Title="PaginaHarta">
     <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Acasa">
+            <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
+        </MenuBarItem>
         <MenuBarItem Text="Echipamente" >
             <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
             <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
@@ -19,14 +22,11 @@
     </ContentPage.MenuBarItems>
     <ScrollView>
         <VerticalStackLayout>
-            <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            <Label Text="Harta Partie Sinaia" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
             <Image BackgroundColor="#D1D1D1"
-        Source="https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg" Aspect="AspectFill" HeightRequest="375" WidthRequest="725" />
+        Source="https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg" Aspect="AspectFill" HeightRequest="375" WidthRequest="725"/>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900" Padding="0,20,0,0">
                 <Label Text="Nume" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center"/>
                 <Label Text="Dificultate" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center" />
                 <Label Text="Lungime" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray"  HorizontalTextAlignment="Center"/>

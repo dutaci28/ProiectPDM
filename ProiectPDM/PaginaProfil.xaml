@@ -5,9 +5,15 @@
              Title="PaginaProfil">
 
     <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Acasa">
+            <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
+        </MenuBarItem>
         <MenuBarItem Text="Echipamente" >
             <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
             <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Informatii">
+            <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
         </MenuBarItem>
         <MenuBarItem Text="Cont">
             <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
@@ -16,9 +22,9 @@
     </ContentPage.MenuBarItems>
     
     <VerticalStackLayout>
-        <Label x:Name="Email"/>
-        <Label x:Name="Parola"/>
-        <Label x:Name="Nume"/>
-        <Label x:Name="Telefon"/>
+        <Label x:Name="Email" HorizontalOptions="Center" FontSize="24" Padding="0,20,0,0"/>
+        <Label x:Name="Parola" HorizontalOptions="Center" FontSize="24"/>
+        <Label x:Name="Nume" HorizontalOptions="Center" FontSize="24"/>
+        <Label x:Name="Telefon" HorizontalOptions="Center" FontSize="24"/>
     </VerticalStackLayout>
 </ContentPage>

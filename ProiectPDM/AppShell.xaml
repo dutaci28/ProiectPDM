@@ -36,4 +36,9 @@ Title="Inchirieri"
 ContentTemplate="{DataTemplate local:PaginaInchirieri}"
 Route="PaginaInchirieri" />
 
+    <ShellContent
+Title="Acasa"
+ContentTemplate="{DataTemplate local:PaginaAcasa}"
+Route="PaginaAcasa" />
+
 </Shell>

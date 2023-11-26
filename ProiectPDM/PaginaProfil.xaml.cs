@@ -16,6 +16,10 @@ public partial class PaginaProfil : ContentPage
         Telefon.Text = "Telefon: " + App.currentClient.Telefon;
     }
 
+    private void Acasa_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaAcasa");
+    }
     private void Disponibile_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaEchipamente");
@@ -29,6 +33,11 @@ public partial class PaginaProfil : ContentPage
     private void Profil_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaProfil");
+    }
+
+    private void Informatii_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaHarta");
     }
 
     private void Logout_Clicked(object sender, EventArgs e)

@@ -1,21 +1,20 @@
 namespace ProiectPDM;
 
-public partial class PaginaHarta : ContentPage
+public partial class PaginaAcasa : ContentPage
 {
-	public PaginaHarta()
+	public PaginaAcasa()
 	{
 		InitializeComponent();
         Image image = new Image
         {
-            Source = ImageSource.FromUri(new Uri("https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg"))
+            Source = ImageSource.FromUri(new Uri("https://static.vecteezy.com/system/resources/previews/004/231/994/original/young-man-riding-on-skis-masked-winter-flat-illustration-in-cartoon-style-winter-sport-activities-illustration-winter-landscape-vector.jpg"))
         };
-       
     }
+
     private void Acasa_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaAcasa");
     }
-
     private void Disponibile_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaEchipamente");

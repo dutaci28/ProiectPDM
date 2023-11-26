@@ -18,8 +18,7 @@ public partial class PaginaLogin : ContentPage
 
         if (IsLoginValid(email, password))
         {
-            DisplayAlert("Login Successful", "The Client named: " + App.currentClient.Nume + " exists." , "OK");
-            Shell.Current.GoToAsync("//PaginaEchipamente");
+            Shell.Current.GoToAsync("//PaginaAcasa");
         }
         else
         {

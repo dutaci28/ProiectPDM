@@ -5,6 +5,9 @@
              Title="PaginaEchipamente">
 
     <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Acasa">
+            <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
+        </MenuBarItem>
         <MenuBarItem Text="Echipamente" >
             <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
             <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
@@ -20,8 +23,8 @@
     </ContentPage.MenuBarItems>
 
     <ScrollView>
-        <VerticalStackLayout>
-            <CollectionView x:Name="colViewEchipamente">
+        <VerticalStackLayout Padding="20,20,20,20">
+            <CollectionView x:Name="colViewEchipamente" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -45,6 +48,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Button Text="Populeaza baza de date cu echipamente de test" Clicked="Populeaza_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

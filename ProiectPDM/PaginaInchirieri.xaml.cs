@@ -46,8 +46,7 @@ public partial class PaginaInchirieri : ContentPage
     {
         string json = JsonConvert.SerializeObject(listaEchipamenteClient, Formatting.Indented);
         File.WriteAllText((Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Inchirieri.json")), json);
-        //File.WriteAllText((Path.Combine("C:\\Users\\dutac\\OneDrive\\Desktop", "Inchirieri.json")), json);
-        DisplayAlert("Fisier descarcat","", "OK");
+        DisplayAlert("Fisier descarcat cu denumirea 'Inchirieri.json'","", "OK");
     }
 
     private void Sterge_Clicked(object sender, EventArgs e)
@@ -70,6 +69,7 @@ public partial class PaginaInchirieri : ContentPage
             }
         }
         populeazaLista();
+        Shell.Current.GoToAsync("//PaginaAcasa");
     }
 
     protected override void OnDisappearing()
@@ -79,6 +79,10 @@ public partial class PaginaInchirieri : ContentPage
         listaEchipamenteClient.Clear();
     }
 
+    private void Acasa_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaAcasa");
+    }
     private void Disponibile_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaEchipamente");
@@ -92,6 +96,11 @@ public partial class PaginaInchirieri : ContentPage
     private void Profil_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaProfil");
+    }
+
+    private void Informatii_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaHarta");
     }
 
     private void Logout_Clicked(object sender, EventArgs e)
