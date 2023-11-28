@@ -14,6 +14,7 @@
         </MenuBarItem>
         <MenuBarItem Text="Informatii">
             <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
+            <MenuFlyoutItem Text="Statisticii" Clicked="Statisticii_Clicked" />
         </MenuBarItem>
         <MenuBarItem Text="Cont">
             <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />

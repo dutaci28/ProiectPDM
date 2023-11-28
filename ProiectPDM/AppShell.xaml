@@ -41,4 +41,9 @@ Title="Acasa"
 ContentTemplate="{DataTemplate local:PaginaAcasa}"
 Route="PaginaAcasa" />
 
+    <ShellContent
+Title="Statistici"
+ContentTemplate="{DataTemplate local:PaginaStatistici}"
+Route="PaginaStatistici" />
+
 </Shell>

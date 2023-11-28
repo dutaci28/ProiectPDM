@@ -1,21 +1,47 @@
+using Microcharts;
+using Microcharts.Maui;
+using ProiectPDM.Services;
+using SkiaSharp;
+
 namespace ProiectPDM;
 
-public partial class PaginaProfil : ContentPage
+public partial class PaginaStatistici : ContentPage
 {
-	public PaginaProfil()
+    private readonly VremeService _weatherService = new VremeService();
+
+
+    public PaginaStatistici()
 	{
 		InitializeComponent();
-	}
+        LoadWeatherData();
 
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-        Email.Text = "Email: " + App.currentClient.Email;
-        Nume.Text = "Nume: " + App.currentClient.Nume;
-        Telefon.Text = "Telefon: " + App.currentClient.Telefon;
     }
 
-    private void Statisticii_Clicked(object sender, EventArgs e)
+      private async void LoadWeatherData()
+    {
+        base.OnAppearing();
+        var weatherData = await _weatherService.GetWeatherDataAsync("Sinaia");
+
+        var entries = new List<ChartEntry>();
+        foreach (var item in weatherData)
+        {
+            DateTime dateTime = DateTimeOffset.FromUnixTimeSeconds(item.dt).DateTime;
+
+            ChartEntry entry = new ChartEntry((float)item.main.temp)
+            {
+                Label = dateTime.ToString("MMM dd - hh : mm"),
+                ValueLabel = item.main.temp.ToString()
+            };
+            entries.Add(entry);
+
+            chartView1.Chart = new LineChart
+            {
+                Entries = entries
+            };
+        }
+    }
+
+        private void Statisticii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaStatistici");
     }

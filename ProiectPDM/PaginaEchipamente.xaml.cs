@@ -27,6 +27,10 @@ public partial class PaginaEchipamente : ContentPage
         DisplayAlert("Inchiriere cu succes", "Echipamentul " + item.Denumire + " a fost inchiriat.", "OK");
     }
 
+    private void Statisticii_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaStatistici");
+    }
     private void Acasa_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaAcasa");

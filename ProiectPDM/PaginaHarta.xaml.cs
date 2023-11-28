@@ -11,6 +11,11 @@ public partial class PaginaHarta : ContentPage
         };
        
     }
+    private void Statisticii_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaStatistici");
+    }
+
     private void Acasa_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaAcasa");
