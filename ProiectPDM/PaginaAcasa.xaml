@@ -24,10 +24,9 @@
     <ScrollView>
     <VerticalStackLayout>
             <Label Text="Inchirieri Sinaia" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
-            <Label Text="
-Bine ați venit la Inchirieri Sinaia - destinația ta de încredere pentru închirierea echipamentelor de ski și snowboard! Cu o gamă variată de echipamente de la mărci de top, oferim soluții personalizate pentru toate nivelurile de experiență. Echipa noastră pasionată este aici pentru a vă asista în alegerea echipamentului perfect, iar procesul nostru ușor de rezervare online vă permite să vă pregătiți pentru aventura pe pârtie fără efort. Descoperiți plăcerea sporturilor de iarnă cu Inchirieri Sinaia - unde siguranța și distracția se întâlnesc pe zăpadă!" HorizontalOptions="Center" FontSize="16"/>
+            <Label Text="Bine ați venit la Inchirieri Sinaia - destinația ta de încredere pentru închirierea echipamentelor de ski și snowboard! Cu o gamă variată de echipamente de la mărci de top, oferim soluții personalizate pentru toate nivelurile de experiență. Echipa noastră pasionată este aici pentru a vă asista în alegerea echipamentului perfect, iar procesul nostru ușor de rezervare online vă permite să vă pregătiți pentru aventura pe pârtie fără efort. Descoperiți plăcerea sporturilor de iarnă cu Inchirieri Sinaia - unde siguranța și distracția se întâlnesc pe zăpadă!" HorizontalOptions="Center" FontSize="16"/>
         <Image BackgroundColor="#D1D1D1"
-Source="https://static.vecteezy.com/system/resources/previews/004/231/994/original/young-man-riding-on-skis-masked-winter-flat-illustration-in-cartoon-style-winter-sport-activities-illustration-winter-landscape-vector.jpg" Aspect="AspectFill" HeightRequest="450" WidthRequest="725" />
+             Source="https://static.vecteezy.com/system/resources/previews/004/231/994/original/young-man-riding-on-skis-masked-winter-flat-illustration-in-cartoon-style-winter-sport-activities-illustration-winter-landscape-vector.jpg" Aspect="AspectFill" HeightRequest="450" WidthRequest="725" />
             <TableView HorizontalOptions="Center">
             <TableRoot>
                 <TableSection Title="Program inchirieri">

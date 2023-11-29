@@ -21,7 +21,6 @@ namespace ProiectPDM.Services
 
                 var weatherData = JsonConvert.DeserializeObject<WeatherResponse>(response);
 
-                // Assuming WeatherResponse has a List<WeatherData> property named "list"
                 return weatherData?.list;
             }
         }
@@ -32,18 +31,15 @@ namespace ProiectPDM.Services
     {
         public long dt { get; set; }
         public Main main { get; set; }
-        // Add other properties as needed
     }
 
     public class Main
     {
         public float temp { get; set; }
-        // Add other properties as needed
     }
 
     public class WeatherResponse
     {
         public List<WeatherData> list { get; set; }
-        // Add other properties as needed
     }
 }

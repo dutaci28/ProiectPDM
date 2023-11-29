@@ -9,17 +9,16 @@ public partial class PaginaStatistici : ContentPage
 {
     private readonly VremeService _weatherService = new VremeService();
 
-
     public PaginaStatistici()
 	{
 		InitializeComponent();
         LoadWeatherData();
-
     }
 
-      private async void LoadWeatherData()
+    private async void LoadWeatherData()
     {
         base.OnAppearing();
+
         var weatherData = await _weatherService.GetWeatherDataAsync("Sinaia");
 
         var entries = new List<ChartEntry>();
@@ -41,7 +40,7 @@ public partial class PaginaStatistici : ContentPage
         }
     }
 
-        private void Statisticii_Clicked(object sender, EventArgs e)
+    private void Statisticii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaStatistici");
     }

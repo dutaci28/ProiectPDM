@@ -46,16 +46,15 @@ public partial class PaginaEchipamente : ContentPage
         Shell.Current.GoToAsync("//PaginaInchirieri");
     }
     
-
-  private void Informatii_Clicked(object sender, EventArgs e)
+    private void Informatii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaHarta");
     }
+
     private void Profil_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaProfil");
     }
-    
     private async void Populeaza_Clicked(object sender, EventArgs e)
     {
         await App.Database.SaveEchipamentAsync(new Model.Echipament { Denumire = "Sanie de lemn", Categorie = Model.TipCategorie.Sanie, Marime = Model.TipMarime.XL, Pret = 99.99f });
@@ -66,7 +65,6 @@ public partial class PaginaEchipamente : ContentPage
         DisplayAlert("Populare", "Intrarile de test au fost adaugate in baza de date.", "OK");
         Shell.Current.GoToAsync("//PaginaAcasa");
     }
-
     private void Logout_Clicked(object sender, EventArgs e)
     {
         App.currentClient = null;

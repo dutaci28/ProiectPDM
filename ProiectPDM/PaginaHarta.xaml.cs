@@ -31,7 +31,6 @@ public partial class PaginaHarta : ContentPage
         Shell.Current.GoToAsync("//PaginaInchirieri");
     }
 
-
     private void Informatii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaHarta");

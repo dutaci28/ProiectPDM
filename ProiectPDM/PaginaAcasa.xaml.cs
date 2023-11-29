@@ -11,8 +11,6 @@ public partial class PaginaAcasa : ContentPage
         };
     }
 
-    
-
     private void Statisticii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaStatistici");
@@ -30,7 +28,6 @@ public partial class PaginaAcasa : ContentPage
     {
         Shell.Current.GoToAsync("//PaginaInchirieri");
     }
-
 
     private void Informatii_Clicked(object sender, EventArgs e)
     {

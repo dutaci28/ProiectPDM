@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectPDM.PaginaHarta"
              Title="PaginaHarta">
+    
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Acasa">
             <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
@@ -25,7 +26,7 @@
         <VerticalStackLayout>
             <Label Text="Harta Partie Sinaia" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
             <Image BackgroundColor="#D1D1D1"
-        Source="https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg" Aspect="AspectFill" HeightRequest="375" WidthRequest="725"/>
+             Source="https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg" Aspect="AspectFill" HeightRequest="375" WidthRequest="725"/>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" MaximumWidthRequest="900" Padding="0,20,0,0">
                 <Label Text="Nume" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HorizontalTextAlignment="Center"/>

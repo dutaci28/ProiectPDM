@@ -22,28 +22,28 @@
         Route="PaginaEchipamente" />
 
     <ShellContent
-       Title="Informatii"
-       ContentTemplate="{DataTemplate local:PaginaHarta}"
-       Route="PaginaHarta" />
+        Title="Informatii"
+        ContentTemplate="{DataTemplate local:PaginaHarta}"
+        Route="PaginaHarta" />
 
     <ShellContent
-    Title="Profil"
-    ContentTemplate="{DataTemplate local:PaginaProfil}"
-    Route="PaginaProfil" />
+        Title="Profil"
+        ContentTemplate="{DataTemplate local:PaginaProfil}"
+        Route="PaginaProfil" />
 
     <ShellContent
-Title="Inchirieri"
-ContentTemplate="{DataTemplate local:PaginaInchirieri}"
-Route="PaginaInchirieri" />
+        Title="Inchirieri"
+        ContentTemplate="{DataTemplate local:PaginaInchirieri}"
+        Route="PaginaInchirieri" />
 
     <ShellContent
-Title="Acasa"
-ContentTemplate="{DataTemplate local:PaginaAcasa}"
-Route="PaginaAcasa" />
+        Title="Acasa"
+        ContentTemplate="{DataTemplate local:PaginaAcasa}"
+        Route="PaginaAcasa" />
 
     <ShellContent
-Title="Statistici"
-ContentTemplate="{DataTemplate local:PaginaStatistici}"
-Route="PaginaStatistici" />
+        Title="Statistici"
+        ContentTemplate="{DataTemplate local:PaginaStatistici}"
+        Route="PaginaStatistici" />
 
 </Shell>

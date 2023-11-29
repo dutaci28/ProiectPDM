@@ -27,7 +27,6 @@ public partial class PaginaProfil : ContentPage
     {
         Shell.Current.GoToAsync("//PaginaEchipamente");
     }
-
     private void Inchirieri_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaInchirieri");
