@@ -15,7 +15,7 @@ namespace ProiectPDM
             {
                 if (database == null)
                 {
-                    database = new BazaDate(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BazaDate.db3"));
+                    database = new BazaDate(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BazaDateSinaia.db3"));
                 }
                 return database;
             }

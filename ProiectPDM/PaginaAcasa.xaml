@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectPDM.PaginaAcasa">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Acasa">
+            <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Echipamente" >
+            <MenuFlyoutItem Text="Echipamente disponibile" Clicked="Disponibile_Clicked"/>
+            <MenuFlyoutItem Text="Echipamente inchiriate" Clicked="Inchirieri_Clicked"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Informatii">
+            <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
+            <MenuFlyoutItem Text="Statistici Vreme" Clicked="Statisticii_Clicked" />
+        </MenuBarItem>
+        <MenuBarItem Text="Cont">
+            <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
+            <MenuFlyoutItem Text="Deconectare" Clicked="Logout_Clicked"/>
+        </MenuBarItem>
+
+    </ContentPage.MenuBarItems>
+    <ScrollView>
+    <VerticalStackLayout>
+            <Label Text="Inchirieri Sinaia" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
+            <Label Text="Bine ați venit la Inchirieri Sinaia - destinația ta de încredere pentru închirierea echipamentelor de ski și snowboard! Cu o gamă variată de echipamente de la mărci de top, oferim soluții personalizate pentru toate nivelurile de experiență. Echipa noastră pasionată este aici pentru a vă asista în alegerea echipamentului perfect, iar procesul nostru ușor de rezervare online vă permite să vă pregătiți pentru aventura pe pârtie fără efort. Descoperiți plăcerea sporturilor de iarnă cu Inchirieri Sinaia - unde siguranța și distracția se întâlnesc pe zăpadă!" HorizontalOptions="Center" FontSize="16"/>
+        <Image BackgroundColor="#D1D1D1"
+             Source="https://static.vecteezy.com/system/resources/previews/004/231/994/original/young-man-riding-on-skis-masked-winter-flat-illustration-in-cartoon-style-winter-sport-activities-illustration-winter-landscape-vector.jpg" Aspect="AspectFill" HeightRequest="450" WidthRequest="725" />
+            <TableView HorizontalOptions="Center">
+            <TableRoot>
+                <TableSection Title="Program inchirieri">
+                    <TextCell Text="Luni  08:00-17:00" />
+                    <TextCell Text="Marti  08:00-17:00" />
+                    <TextCell Text="Miercuri  08:00-17:00" />
+                    <TextCell Text="Joi  08:00-17:00" />
+                    <TextCell Text="Vineri  08:00-17:00" />
+                    <TextCell Text="Sambata  09:00-20:00" />
+                    <TextCell Text="Duminica  09:00-20:00" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

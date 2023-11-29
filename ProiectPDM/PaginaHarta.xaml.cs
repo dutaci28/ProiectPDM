@@ -1,45 +1,43 @@
 namespace ProiectPDM;
 
-public partial class PaginaProfil : ContentPage
+public partial class PaginaHarta : ContentPage
 {
-	public PaginaProfil()
+	public PaginaHarta()
 	{
 		InitializeComponent();
-	}
-
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-        Email.Text = "Email: " + App.currentClient.Email;
-        Nume.Text = "Nume: " + App.currentClient.Nume;
-        Telefon.Text = "Telefon: " + App.currentClient.Telefon;
+        Image image = new Image
+        {
+            Source = ImageSource.FromUri(new Uri("https://www.montania.ro/images/gallery/SkiMap/SINAIA_SKI_TOP05.jpg"))
+        };
+       
     }
-
     private void Statisticii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaStatistici");
     }
+
     private void Acasa_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaAcasa");
     }
+
     private void Disponibile_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaEchipamente");
     }
+
     private void Inchirieri_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaInchirieri");
     }
 
-    private void Profil_Clicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync("//PaginaProfil");
-    }
-
     private void Informatii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaHarta");
+    }
+    private void Profil_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//PaginaProfil");
     }
 
     private void Logout_Clicked(object sender, EventArgs e)

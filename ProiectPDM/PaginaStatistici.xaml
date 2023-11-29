@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProiectPDM.PaginaProfil">
-
+              xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="ProiectPDM.PaginaStatistici">
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Acasa">
             <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
@@ -20,10 +20,12 @@
             <MenuFlyoutItem Text="Deconectare" Clicked="Logout_Clicked"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
-    
-    <VerticalStackLayout>
-        <Label x:Name="Email" HorizontalOptions="Center" FontSize="24" Padding="0,20,0,0"/>
-        <Label x:Name="Nume" HorizontalOptions="Center" FontSize="24"/>
-        <Label x:Name="Telefon" HorizontalOptions="Center" FontSize="24"/>
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Vreme Sinaia pe ore" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
+
+            <micro:ChartView x:Name="chartView1" HeightRequest="500" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
