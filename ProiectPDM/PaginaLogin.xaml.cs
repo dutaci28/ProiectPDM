@@ -9,8 +9,16 @@ public partial class PaginaLogin : ContentPage
     public PaginaLogin()
     {
         InitializeComponent();
+      
     }
 
+    private async void Populeaza_Echipamente()
+    {
+        await App.Database.DeleteAllEchipamenteAsync();
+        
+        //DisplayAlert("Populare", "Intrarile de test au fost adaugate in baza de date.", "OK");
+        //Shell.Current.GoToAsync("//PaginaAcasa");
+    }
     private void LoginButton_Clicked(object sender, EventArgs e)
     {
         string email = EmailEntry.Text;
@@ -48,5 +56,6 @@ public partial class PaginaLogin : ContentPage
     {
         base.OnAppearing();
         listaClienti = await App.Database.GetClientiAsync();
+        Populeaza_Echipamente();
     }
 }

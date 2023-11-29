@@ -68,7 +68,7 @@ public partial class PaginaEchipamente : ContentPage
     private void Logout_Clicked(object sender, EventArgs e)
     {
         App.currentClient = null;
-        DisplayAlert("Logout succesful", "You have been logged out.", "OK");
+        DisplayAlert("V-ati delogat cu succes!", "", "OK");
         Shell.Current.GoToAsync("//LoginPage");
     }
 }

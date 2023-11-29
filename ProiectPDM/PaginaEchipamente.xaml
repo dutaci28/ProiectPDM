@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProiectPDM.PaginaEchipamente"
-             Title="PaginaEchipamente">
+             x:Class="ProiectPDM.PaginaEchipamente">
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Acasa">
             <MenuFlyoutItem Text="Acasa" Clicked="Acasa_Clicked"/>
         </MenuBarItem>
         <MenuBarItem Text="Echipamente" >
-            <MenuFlyoutItem Text="Disponibile" Clicked="Disponibile_Clicked"/>
-            <MenuFlyoutItem Text="Inchirieri" Clicked="Inchirieri_Clicked"/>
+            <MenuFlyoutItem Text="Echipamente disponibile" Clicked="Disponibile_Clicked"/>
+            <MenuFlyoutItem Text="Echipamente inchiriate" Clicked="Inchirieri_Clicked"/>
         </MenuBarItem>
         <MenuBarItem Text="Informatii">
             <MenuFlyoutItem Text="Informatii" Clicked="Informatii_Clicked" />
-            <MenuFlyoutItem Text="Statisticii" Clicked="Statisticii_Clicked" />
+            <MenuFlyoutItem Text="Statistici Vreme" Clicked="Statisticii_Clicked" />
         </MenuBarItem>
         <MenuBarItem Text="Cont">
             <MenuFlyoutItem Text="Profil" Clicked="Profil_Clicked" />
-            <MenuFlyoutItem Text="Logout" Clicked="Logout_Clicked"/>
+            <MenuFlyoutItem Text="Deconectare" Clicked="Logout_Clicked"/>
         </MenuBarItem>
     
     </ContentPage.MenuBarItems>
 
     <ScrollView>
         <VerticalStackLayout Padding="20,20,20,20">
+            <Label Text="Echipamente disponibile" HorizontalOptions="Center" FontSize="24" Padding="20,20,20,20"/>
             <CollectionView x:Name="colViewEchipamente" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -49,7 +49,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <Button Text="Populeaza baza de date cu echipamente de test" Clicked="Populeaza_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

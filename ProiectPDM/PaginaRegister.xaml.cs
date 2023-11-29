@@ -20,12 +20,12 @@ public partial class PaginaRegister : ContentPage
         {
             Client c = new Client { Nume = name, Email = email, Telefon = phone, Parola = password };
             App.Database.SaveClientAsync(c);
-            DisplayAlert("Register Successful", "Client with name: " + c.Nume + " was registered. You can now log in.", "OK");
+            DisplayAlert("V-ati inregistrat cu succes!", "", "OK");
             Shell.Current.GoToAsync("//LoginPage");
         }
         else
         {
-            DisplayAlert("Register Failed", "Invalid credentials", "OK");
+            DisplayAlert("Inregistrare esuata. Credentiale invalie!", "", "OK");
         }
     }
 

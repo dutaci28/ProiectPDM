@@ -11,6 +11,7 @@ public partial class PaginaAcasa : ContentPage
         };
     }
 
+
     private void Statisticii_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("//PaginaStatistici");
@@ -41,7 +42,7 @@ public partial class PaginaAcasa : ContentPage
     private void Logout_Clicked(object sender, EventArgs e)
     {
         App.currentClient = null;
-        DisplayAlert("Logout succesful", "You have been logged out.", "OK");
+        DisplayAlert("V-ati delogat cu succes!", "", "OK");
         Shell.Current.GoToAsync("//LoginPage");
     }
 }

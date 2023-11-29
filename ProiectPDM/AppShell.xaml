@@ -7,42 +7,35 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Login"
         ContentTemplate="{DataTemplate local:PaginaLogin}"
         Route="LoginPage" />
 
     <ShellContent
-        Title="Register"
+        Title="Creare cont"
         ContentTemplate="{DataTemplate local:PaginaRegister}"
         Route="RegisterPage" />
 
     <ShellContent
-        Title="Echipamente"
         ContentTemplate="{DataTemplate local:PaginaEchipamente}"
         Route="PaginaEchipamente" />
 
     <ShellContent
-        Title="Informatii"
         ContentTemplate="{DataTemplate local:PaginaHarta}"
         Route="PaginaHarta" />
 
     <ShellContent
-        Title="Profil"
         ContentTemplate="{DataTemplate local:PaginaProfil}"
         Route="PaginaProfil" />
 
     <ShellContent
-        Title="Inchirieri"
         ContentTemplate="{DataTemplate local:PaginaInchirieri}"
         Route="PaginaInchirieri" />
 
     <ShellContent
-        Title="Acasa"
         ContentTemplate="{DataTemplate local:PaginaAcasa}"
         Route="PaginaAcasa" />
 
     <ShellContent
-        Title="Statistici"
         ContentTemplate="{DataTemplate local:PaginaStatistici}"
         Route="PaginaStatistici" />
 
